@@ -1,0 +1,16 @@
+# Environment files
+.env
+
+# Temporary and log files
+/tmp/log/*.log
+*.log
+
+# Cache files
+/cache/
+/public/cache/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

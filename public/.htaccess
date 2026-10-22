@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Stop processing if request matches physical file or directory
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Route all requests to Front Controller
+    RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+</IfModule>
